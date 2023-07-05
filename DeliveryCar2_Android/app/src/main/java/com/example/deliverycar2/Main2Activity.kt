@@ -82,7 +82,7 @@ class Main2Activity : AppCompatActivity() {
 
                             val destino = destinoArray.getString(0)
                             val origen = origenArray.getString(0)
-                            responseTextView.text = "Destino: $destino\n" +
+                            responseTextView.text = "Destno: $destino\n" +
                                     "Origen: $origen\n" +
                                     "Distancia: $distancia\n" +
                                     "Precio: $precio"
