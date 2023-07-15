@@ -30,7 +30,7 @@ class LoginOrRegisterActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.registerButton -> {
                 // Start the RegisterActivity to handle registration process
-                startActivity(Intent(this, RegisterActivity::class.java))
+                startActivity(Intent(this, Step2::class.java))
             }
         }
     }

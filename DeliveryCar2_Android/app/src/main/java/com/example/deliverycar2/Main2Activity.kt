@@ -82,10 +82,11 @@ class Main2Activity : AppCompatActivity() {
 
                             val destino = destinoArray.getString(0)
                             val origen = origenArray.getString(0)
-                            responseTextView.text = "Destno: $destino\n" +
-                                    "Origen: $origen\n" +
-                                    "Distancia: $distancia\n" +
-                                    "Precio: $precio"
+                            responseTextView.text =
+                                "Destno: $destino\n" +
+                                        "Origen: $origen\n" +
+                                        "Distancia: $distancia\n" +
+                                        "Precio: $precio"
 
                             continueButton.isEnabled = true
                         } else {
