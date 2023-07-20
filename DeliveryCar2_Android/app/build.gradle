@@ -5,6 +5,10 @@ plugins {
     id 'com.google.firebase.appdistribution'
 }
 
+ext {
+    test = 'test'
+}
+
 android {
     compileSdk 33
 
@@ -22,7 +26,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            buildConfigField "String", "destiny", "Destino"
         }
+//        debug {
+//            buildConfigField "String", "destiny", "Deeestino"
+//        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11

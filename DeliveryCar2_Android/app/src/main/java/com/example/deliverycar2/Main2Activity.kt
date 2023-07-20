@@ -33,7 +33,7 @@ class Main2Activity : AppCompatActivity() {
         requestButton.setOnClickListener {
             val origen = origenEditText.text.toString()
             val destino = destinoEditText.text.toString()
-            runRESTAPI("https://kooltheoutsider.pythonanywhere.com/reqDist", origen, destino)
+            runapicall("https://kooltheoutsider.pythonanywhere.com/reqDist", origen, destino)
 
             // Hide the keyboard
             val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
@@ -47,7 +47,7 @@ class Main2Activity : AppCompatActivity() {
         }
     }
 
-    private fun runRESTAPI(url: String, origen: String, destino: String) {
+    private fun runapicall(url: String, origen: String, destino: String) {
         val formBody = FormBody.Builder()
             .add("add_from", origen)
             .add("add_to", destino)
