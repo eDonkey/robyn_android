@@ -9,6 +9,15 @@ ext {
     test = 'test'
 }
 
+def versionCodeDate() {
+    return new Date().format("yyyyMMdd").toInteger()
+}
+def versionCodeDateMonth() {
+    return new Date().format("MM").toInteger()
+}
+def versionCodeDateHMS() {
+    return new Date().format("HHmmss").toInteger()
+}
 android {
     compileSdk 33
 
@@ -16,9 +25,8 @@ android {
         applicationId "com.example.deliverycar2"
         minSdk 21
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
-
+        versionCode versionCodeDate() + versionCodeDateHMS()
+        versionName "0." + versionCodeDateMonth() + "." + versionCodeDateHMS()
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

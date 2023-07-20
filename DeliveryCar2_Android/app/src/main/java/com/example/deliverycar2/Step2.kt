@@ -91,9 +91,9 @@ class Step2 : AppCompatActivity() {
         val namePattern = Pattern.compile("[a-zA-Z]+")
         val emailPattern = Pattern.compile("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")
         val passwordPattern = Pattern.compile("[a-zA-Z0-9]{8,}")
-//
+
 //        if (firstName.isEmpty() || !namePattern.matcher(firstName).matches()) {
-//            firstNameEditText.error = "Invalid first name"
+//            firstName.error = "Invalid first name"
 //            firstNameEditText.requestFocus()
 //            return false
 //        }
