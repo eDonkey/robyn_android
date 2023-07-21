@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Robyn</string>
+    <string name="title_activity_main">Robyn - Car Delivery Service</string>
+    <string name="registrarBtn">Registrarse</string>
+    <string name="ingresarBtn">Ingresar</string>
+    <string name="orSptr">O</string>
+    <string name="ToSConfirmationAcceptPrompt">Acepto</string>
+    <string name="ToSConfirmationDeclinePrompt">No Acepto</string>
+    <string name="ToSConfirmationTitlePrompt">Terminos y Condiciones</string>
+    <string name="ToSConfirmationTextPrompt">Desea aceptar los <a href=''>Terminos y Condiciones</a> de uso?</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
