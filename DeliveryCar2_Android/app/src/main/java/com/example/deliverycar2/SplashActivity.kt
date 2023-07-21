@@ -19,6 +19,8 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //requestWindowFeature(window.FEATURE_NO_TITLE)
+        supportActionBar?.hide()
         setContentView(R.layout.activity_splash)
 
         val loadingImageView: ImageView = findViewById(R.id.loadingImageView)

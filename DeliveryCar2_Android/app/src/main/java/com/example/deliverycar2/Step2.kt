@@ -21,6 +21,7 @@ class Step2 : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar?.hide()
         setContentView(R.layout.activity_step2)
         val firstNameEditText = findViewById<EditText>(R.id.firstNameEditText)
         val lastNameEditText = findViewById<EditText>(R.id.lastNameEditText)
