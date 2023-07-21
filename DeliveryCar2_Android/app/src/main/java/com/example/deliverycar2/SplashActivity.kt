@@ -28,7 +28,7 @@ class SplashActivity : AppCompatActivity() {
             // User is not in Argentina, show an error message or exit the app
             Log.d("SplashActivity", "User is not in Argentina")
             // Add your desired logic here, such as showing an error dialog or exiting the app
-            finish()
+            launchMainActivityWithDelay()
         }
     }
 
