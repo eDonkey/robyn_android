@@ -10,10 +10,12 @@ import androidx.appcompat.app.AppCompatActivity
 import okhttp3.*
 import org.json.JSONObject
 import java.io.IOException
+import com.example.deliverycar2.BuildConfig
 
 class Main2Activity : AppCompatActivity() {
     private val client = OkHttpClient()
     private lateinit var origenEditText: EditText
+    private lateinit var versionName: TextView
     private lateinit var destinoEditText: EditText
     private lateinit var requestButton: Button
     private lateinit var responseTextView: TextView
@@ -30,6 +32,10 @@ class Main2Activity : AppCompatActivity() {
         responseTextView = findViewById(R.id.responseTextView)
         continueButton = findViewById(R.id.continueButton)
         continueButton.isEnabled = false
+
+        versionName = findViewById(R.id.textViewVC)
+        versionName.text = "version: " + BuildConfig.VERSION_NAME
+
 
         requestButton.setOnClickListener {
             val origen = origenEditText.text.toString()
@@ -67,7 +73,7 @@ class Main2Activity : AppCompatActivity() {
             }
 
             override fun onResponse(call: Call, response: Response) {
-                val responseBody = response.body?.string()
+                val responseBody = response.body.string()
                 val jsonResponse = JSONObject(responseBody)
 
                 if (jsonResponse.has("data")) {

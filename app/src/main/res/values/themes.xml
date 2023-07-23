@@ -18,7 +18,7 @@
         <item name="android:actionBarStyle">@style/Widget.Theme.DeliveryCar2.ActionBar.Fullscreen
         </item>
         <item name="android:windowActionBarOverlay">true</item>
-        <item name="android:windowBackground">@null</item>
+        <item name="android:windowBackground">@color/white</item>
     </style>
 
     <style name="ThemeOverlay.DeliveryCar2.FullscreenContainer" parent="">
